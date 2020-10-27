@@ -18,7 +18,7 @@ function App() {
         console.log(e)
         trackEvent({ category: 'sample-page', action: 'click-event', customDimensions: [{
             id: 1,
-                value:JSON.p({x:e.pageX, y:e.pageY})
+                value:JSON.stringify({x:e.pageX, y:e.pageY})
             }]})
     }
     return (
